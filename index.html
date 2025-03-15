@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬러 타로</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>컬러 타로</h1>
+    <p>질문을 입력하세요 (선택사항):</p>
+    <input type="text" id="question" placeholder="입력하지 않아도 카드를 뽑을 수 있습니다!" size="50">
+    <br>
+
+    <button onclick="drawCards(1)">한 장 뽑기</button>
+    <button onclick="drawCards(3)">세 장 뽑기</button>
+
+    <div class="card-container" id="cardArea"></div>
+
+    <footer>
+        제작 : 월홍🌙
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
