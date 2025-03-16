@@ -12,20 +12,21 @@ body {
 .card-container { 
     display: flex; 
     justify-content: center; 
-    flex-wrap: wrap; /* 여러 개가 한 줄에 정렬되도록 설정 */
+    flex-wrap: nowrap; /* 한 줄에 카드가 정렬되도록 설정 */
     gap: 10px; 
     margin-top: 20px;
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    overflow-x: auto; /* 가로 스크롤 가능하게 설정 (초과 시) */
+    white-space: nowrap;
 }
 
 .card { 
-    width: fit-content; /* 버튼 크기에 맞게 자동 조정 */
+    width: auto; /* 버튼 크기에 맞게 자동 조정 */
     min-width: 140px; /* 최소 크기 설정 */
     height: auto; /* 버튼 크기에 맞게 자동 조정 */
     padding: 12px 22px; /* 버튼 크기와 동일하게 설정 */
     border-radius: 10px; 
-    display: flex; 
+    display: inline-flex; /* 한 줄로 정렬 */
     align-items: center; 
     justify-content: center; 
     color: white; 
