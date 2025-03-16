@@ -18,6 +18,13 @@ body {
     max-width: 900px;
 }
 
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 버튼 간격 조정 */
+    margin-top: 10px;
+}
+
 .card-container, .button-container { 
     display: flex; 
     justify-content: center; 
@@ -66,6 +73,9 @@ footer {
     .card, button {
         width: 120px; /* 태블릿에서 크기 조정 */
     }
+    .button-wrapper {
+        gap: 15px;
+    }
     button {
         font-size: 14px;
         padding: 10px;
@@ -78,6 +88,9 @@ footer {
 @media screen and (max-width: 480px) {
     .card, button {
         width: 100px; /* 모바일에서 크기 조정 */
+    }
+    .button-wrapper {
+        gap: 10px;
     }
     button {
         font-size: 12px;
